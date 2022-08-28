@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<TipsContents xmlns="http://www.avendasys.com/tipsapiDefs/1.0">
+  <TipsHeader importTime="Wed Aug 24 10:21:47 AST 2022" version="6.9"/>
+  <StaticHostLists>
+    <StaticHostList description="" name="Imported_users_MAC" memberType="MACAddress" memberFormat="list">
+      <Members>
+	  {% for des, mm in users.items() %}
+        <Member description="{{des}}" address="{{mm}}"/>
+      {% endfor %}
+      </Members>
+    </StaticHostList>
+   </StaticHostLists>
+</TipsContents>
