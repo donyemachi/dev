@@ -55,7 +55,7 @@ with open("vari.yaml") as file1:
     vari = yaml.safe_load(file1)
 
 #use jinja to render your configuration
-aa = template.render(cas)
+aa = template.render(vari)
 
 with open("wired-mac.xml", mode="w", encoding="utf-8") as results:
     results.write(aa)
