@@ -56,3 +56,6 @@ with open("wired-mac.xml", mode="w", encoding="utf-8") as results:
 
 print(aa)
 #print(variables)
+#print(aa)
+#print(aa)
+#print(aa)
