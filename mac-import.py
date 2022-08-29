@@ -54,5 +54,5 @@ aa = template.render(cas)
 with open("wired-mac.xml", mode="w", encoding="utf-8") as results:
     results.write(aa)
 
-#print(aa)
+print(aa)
 #print(variables)
