@@ -43,7 +43,7 @@ cas = {'users':c}
 
 data2 = yaml.dump(cas)
 
-#read your jinja template file
+
 with open("template.j2") as file:
     template = Template(file.read())
     
@@ -64,4 +64,4 @@ print(aa)
 #print(variables)
 #print(aa)
 #print(aa)
-#print(aa)
+print(aa)

@@ -52,7 +52,7 @@ with device_driver(hostname=host, username=user, password= device_password, opti
         
     
    
-#    info = dev. get_facts()
+
 #    info2 = dev.get_network_instances()
 #    info4= dev.get_bgp_config()
 #    info5= dev.get_bgp_neighbors()
