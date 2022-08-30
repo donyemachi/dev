@@ -41,15 +41,21 @@ c = {str(new_key1):str(new_value1) for (new_key1,new_value1) in zip(ss,sss)}
 
 cas = {'users':c}
 
+data2 = yaml.dump(cas)
 
 #read your jinja template file
 with open("template.j2") as file:
     template = Template(file.read())
     
    
+with open("vari.yaml", mode="w", encoding="utf-8") as results:
+    results.write(data2)
+    
+with open("vari.yaml") as file1:
+    vari = yaml.safe_load(file1)
 
 #use jinja to render your configuration
-aa = template.render(cas)
+aa = template.render(vari)
 
 with open("wired-mac.xml", mode="w", encoding="utf-8") as results:
     results.write(aa)
